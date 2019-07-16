@@ -1,0 +1,11 @@
+﻿@import "./mixins";
+
+.h-view {
+	&-detail {
+		@include fullSize;
+	}
+
+	&-list {
+		@include fullSize;
+	}
+}

@@ -1,0 +1,12 @@
+﻿@import "./mixins";
+
+
+.h-input {
+	@include input(1.5);
+
+	&-wrapper {
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

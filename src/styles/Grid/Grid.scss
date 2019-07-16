@@ -1,0 +1,65 @@
+﻿@import "./../mixins";
+
+
+.h-table {
+	table {
+		width: 100%;
+		@include p-1;
+		border-collapse: collapse;
+		table-layout: fixed;
+	}
+
+	&-head {
+		&-container {
+			border: 1px solid $color-grey;
+		}
+
+		tr {
+			th {
+				text-align: left;
+				border-right: 1px solid $color-grey;
+				@include lh-3;
+				padding-left: 1rem;
+
+				&:last-child {
+					border-right: 0;
+				}
+
+				&:first-letter {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	&-body {
+		&-container {
+			border-left: 1px solid $color-grey;
+			border-bottom: 1px solid $color-grey;
+			border-right: 1px solid $color-grey;
+
+			tr {
+				border-top: 1px solid $color-grey;
+				border-bottom: 1px solid $color-grey;
+
+				&:first-child {
+					border-top: 0;
+				}
+
+				&:last-child {
+					border-bottom: 0;
+				}
+
+				td {
+					@include p-1;
+					text-align: left;
+					border-right: 1px solid $color-grey;
+
+					&:last-child {
+						border-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

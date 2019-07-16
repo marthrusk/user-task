@@ -1,0 +1,17 @@
+﻿@import "./mixins";
+
+
+.h-button {
+	border: 1px solid $color-grey;
+	background: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: all ease-in-out 0.5s;
+
+	&:hover {
+		transition: all ease-in-out 0.2s;
+		background: black;
+		color: white;
+	}
+}

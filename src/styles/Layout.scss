@@ -1,0 +1,26 @@
+﻿@import "./mixins";
+
+html, body, #root, .App {
+	@include fullSize;
+	margin: 0;
+}
+
+.h-layout {
+	@include flex-center;
+	@include fullSize;
+	@include p-1;
+	max-width: 1200px;
+}
+
+.App {
+	@include flex-center;
+	@include fullSize;
+}
+
+.h-row-3 {
+	@include grid(3, row, space-between);
+}
+
+.h-sortable {
+	cursor: pointer;
+}
